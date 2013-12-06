@@ -21,3 +21,8 @@ Simply include the file and then use data attributes to control the number of co
 ```
 
 Open the ```dist/example/index.html``` file for more examples.
+
+### Building
+
+I simply use Node.js to minify using minify. ```npm install -g minify``` if you don't have it already and then    
+```minify src/gridline.js dist/gridline.min.js```
