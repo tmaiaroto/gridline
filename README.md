@@ -22,6 +22,11 @@ Simply include the file and then use data attributes to control the number of co
 
 Open the ```dist/example/index.html``` file for more examples.
 
+### Installing
+
+I'd use Bower if I were you. Simply run ```bower install gridline-bootstrap``` and include the minified JavaScript in the ```<head>``` 
+section of your web pages. Something like: ```<script type="text/javascript" src="/bower_components/dist/gridline.min.js"></script>```
+
 ### Building
 
 I simply use Node.js to minify using minify. ```npm install -g minify``` if you don't have it already and then    
