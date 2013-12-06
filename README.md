@@ -1,13 +1,22 @@
 Gridline
 ===========
 
-This simple and light-weight JavaScript allows for a flexible grid system in any Twitter Bootstrap 3 project.
-Simply include the file and then use data attributes to control the number of columns in any row.
+This simple and light-weight JavaScript allows for more control over grid systems in any Twitter Bootstrap 3 project.
+Simply include the file and then use data attributes to control the number of columns in any row, the gutter width, and more.
 
 ```
 <div class="row" data-columns="16">
 	<div class="col-md-8"></div>
 	<div class="col-md-8"></div>
+</div>
+```
+
+```
+<div class="row" data-columns="24" data-gutter-width="10">
+	<div class="col-md-8"></div>
+	<div class="col-md-8"></div>
+	<div class="col-md-4"></div>
+	<div class="col-md-4"></div>
 </div>
 ```
 
