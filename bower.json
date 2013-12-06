@@ -1,6 +1,6 @@
 {
   "name": "gridline-bootstrap",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "./dist/gridline.min.js",
   "description": "Allows for more control over grid systems in Twitter Bootstrap 3.",
   "homepage": "https://github.com/tmaiaroto/gridline",
