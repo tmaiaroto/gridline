@@ -1,0 +1,19 @@
+{
+  "name": "gridline-bootstrap",
+  "version": "0.0.1",
+  "main": "./dist/gridline.min.js",
+  "description": "Allows for more control over grid systems in Twitter Bootstrap 3.",
+  "homepage": "https://github.com/tmaiaroto/gridline",
+  "license" : ["http://bartaz.mit-license.org/", "http://www.gnu.org/licenses/"],
+  "keywords": [
+    "twitter bootstrap",
+    "bootstrap",
+    "grid",
+    "grid system",
+    "gridline"
+  ],
+  "author": {
+    "name": "Tom Maiaroto",
+    "web": "http://www.shift8creative.com"
+  }
+}
