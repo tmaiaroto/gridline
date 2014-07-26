@@ -63,13 +63,13 @@ gAddStyleToSheet(null, ".flush-row [class*='col-']:last-of-type", "padding-right
  * Do all this on DOM ready.
  */
  $(document).ready(function() {
-    var columnSets = [];
+    var columnSets = {};
     $(".row[data-columns]").each(function() {
         var cols = $(this).data('columns');
         $(this).addClass('cols-' + cols);
         
         if(columnSets['cols-' + cols] === undefined) {
-            columnSets.push('cols-' + cols);
+            columnSets['cols-' + cols] = '';
             
             for(var c=1; c <= cols; c++) {
                 var widthP = (c / cols) * 100;
@@ -91,7 +91,7 @@ gAddStyleToSheet(null, ".flush-row [class*='col-']:last-of-type", "padding-right
         }
     });
     
-    var gutterSets = [];
+    var gutterSets = {};
     $(".row[data-gutter-width]").each(function() {
         var gutterWidth = $(this).data('gutter-width');
         $(this).addClass('gutter-width-' + gutterWidth);
@@ -110,7 +110,7 @@ gAddStyleToSheet(null, ".flush-row [class*='col-']:last-of-type", "padding-right
         }
         
         if(gutterSets['gutter-width-' + gutterWidth] === undefined) {
-            gutterSets.push('gutter-width-' + gutterWidth);
+            gutterSets['gutter-width-' + gutterWidth] = '';
             
             var halfGutter = Math.floor(gutterWidth / 2);
             gAddStyleToSheet(lgSheet, ".gutter-width-" + gutterWidth + " [class*='col-lg-']", "position: relative; min-height: 1px; padding-left: " + halfGutter + "px; padding-right: " + halfGutter + "px;");
